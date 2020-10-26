@@ -6,6 +6,7 @@ Setiap bahasa pemrograman pasti berevolusi dengan tujuan untuk memudahkan user-n
 - Scope
 - var, let, const
 - Template literal
+- Truthy-Falsy
 
 ## Hoising
 
@@ -119,3 +120,41 @@ const jumlahSate = 10;
 let pernyataan = `Saat ini saya memesan ${jumlahSate} tusuk sate.`;
 console.log(pernyataan);
 ```
+
+## Truthy-Falsy
+
+Setiap nilai dari suatu variable, memiliki nilai boolean (`true`/`false`) built-in. Apabila nilai boolean built-in tersebut adalah `true` maka variable tersebut disebut sebagai `truthy`. Apabila nilai boolean built-in tersebut adalah `false` maka variable tersebut disebut sebagai `falsy`.
+
+Nilai variable yang dikategorikan sebagai `falsy` pada JavaScript adalah:
+
+- `false`
+- `0`
+- `-0`
+- `''`
+- `null`
+- `undefined`
+- `NaN`
+
+Pembacaan nilai boolean dari suatu variable dapat dilakukan dengan cara sebagai berikut:
+
+```javascript
+let temp = 10;
+
+if (temp) {
+  // Akan dieksekusi jika nilai boolean temp adalah truthy
+}
+
+if (!temp) { // ! merupakan operator NOT
+  // Akan dieksekusi jika nilai boolean temp adalah falsy
+}
+
+if (Boolean(temp) === true) { // Boolean() akan melakukan konversi nilai temp ke bentuk boolean
+  // Akan dieksekusi jika nilai boolean temp adalah truthy
+}
+
+if (Boolean(temp) === false) {
+  // Akan dieksekusi jika nilai boolean temp adalah falsy
+}
+```
+
+> Referensi: [Pseudocode Note 1 (Truthy dan Falsy)](https://github.com/ideaspaper/class-notes/blob/master/phase-0/notes/pseudocode-note-1.md)
