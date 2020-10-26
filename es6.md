@@ -2,10 +2,10 @@
 
 Setiap bahasa pemrograman pasti berevolusi dengan tujuan untuk memudahkan user-nya, dalam hal ini adalah para programmer yang menggunakan bahasa pemrograman tersebut. Salah satu evolusi penting dari JavaScript adalah ditetapkannya standar ES6. Hal-hal yang berkaitan dengan ES6 dan perlu dipahami untuk saat ini adalah:
 
-- hoisting
-- scope
+- Hoisting
+- Scope
 - var, let, const
-- template literal
+- Template literal
 
 ## Hoising
 
